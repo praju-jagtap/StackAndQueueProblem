@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.Push the Element In a Stack\n2.Peek Element In A Stack\n3.Pop Element In Stack\n");
+                Console.WriteLine("1.Push the Element In a Stack\n2.Peek Element In A Stack\n3.Pop Element In Stack\n4.Insert Element In Queue\n");
                 Console.WriteLine("Select Your Choice: ");
                 Console.WriteLine("----------------------------------\n");
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -42,8 +42,15 @@
                         stack.Display();
                         Console.WriteLine("----------------------------------\n");
                         break;
-
-
+                    case 4:
+                        Console.WriteLine("----------------------------------\n");
+                        LinkedListQueue listQueue = new LinkedListQueue();
+                        listQueue.Enqueue(56);
+                        listQueue.Enqueue(30);
+                        listQueue.Enqueue(70);
+                        Console.WriteLine("----------------------------------\n");
+                        break;
+                    
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
